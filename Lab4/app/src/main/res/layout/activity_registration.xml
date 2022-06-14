@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="10dp"
+    tools:context=".RegistrationActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="428dp"
+        android:layout_height="748dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="246dp"
+            android:layout_height="143dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="20dp"
+            app:srcCompat="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="Welcome On Done List!"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="322dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="We help you meet up you tasks on time."
+            android:textSize="13sp" />
+
+        <LinearLayout
+            android:layout_width="293dp"
+            android:layout_height="251dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="283dp"
+                android:layout_height="42dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:hint="@string/Name"
+                android:paddingLeft="12dp"
+                android:paddingTop="3dp"
+                android:textAlignment="textStart"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="283dp"
+                android:layout_height="42dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/border"
+                android:hint="@string/Email"
+                android:paddingLeft="12dp"
+                android:paddingTop="4dp"
+                android:textAlignment="textStart"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="282dp"
+                android:layout_height="42dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/border"
+                android:hint="@string/Password"
+                android:paddingLeft="12dp"
+                android:paddingTop="4dp"
+                android:textAlignment="textStart"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/Password"
+                android:layout_width="280dp"
+                android:layout_height="42dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/border"
+                android:hint="@string/ConfPassword"
+                android:paddingLeft="12dp"
+                android:paddingTop="4dp"
+                android:textAlignment="textStart"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/SignIn_Button"
+            android:layout_width="280dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/border"
+            android:ellipsize="none"
+            android:onClick="move_home"
+            android:text="Register"
+            android:textColor="#FDF6F6"
+            app:backgroundTint="@color/Turkish_Rose" />
+
+        <LinearLayout
+            android:layout_width="213dp"
+            android:layout_height="38dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="Already have an account?" />
+
+            <TextView
+                android:id="@+id/SignUp"
+                android:layout_width="27dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:onClick="move_sign"
+                android:text="Sign In"
+                android:textColor="@color/Turkish_Rose" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

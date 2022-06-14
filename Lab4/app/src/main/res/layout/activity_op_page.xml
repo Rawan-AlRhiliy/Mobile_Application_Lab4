@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:circularflow_defaultRadius="10dp"
+    tools:context=".OpActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteY="580dp">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="73dp"
+            android:layout_height="64dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="20dp"
+            app:srcCompat="@drawable/logo" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="360dp"
+            android:layout_height="584dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="-20dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="319dp"
+                android:layout_height="304dp"
+                app:srcCompat="@drawable/checklist_bro" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Let’s get things done on time"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="325dp"
+                android:layout_height="99dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="“One of the secrets of getting more done is to make a TO-DO List every day, keep it visible, and use it as a guide to action as you go through the day”.  (Jean de La Fontaine)" />
+
+            <Button
+                android:id="@+id/SignIn_Button"
+                android:layout_width="280dp"
+                android:layout_height="46dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/border"
+                android:ellipsize="none"
+                android:onClick="move_sign"
+                android:text="Get Started"
+                android:textColor="#FDF6F6"
+                app:backgroundTint="@color/Turkish_Rose" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

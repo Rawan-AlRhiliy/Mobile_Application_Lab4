@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Lab4</string>
+    <string name="lbl_tasks_list">Tasks List</string>
+    <string name="lbl_daily_tasks">Daily Tasks</string>
+    <string name="new_tasks">Add a new task</string>
+    <string name="Email">Enter your Email</string>
+    <string name="Name">Enter your Full Name</string>
+    <string name="Password">Enter your Password</string>
+    <string name="ConfPassword">Enter your Password Again </string>
+</resources>
